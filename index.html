@@ -1,0 +1,299 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>SHIM MIN HO</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="MobileOptimized" content="0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Raleway:200,300,400,600' rel='stylesheet' type='text/css'>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=47MjAJ2aXy">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=47MjAJ2aXy">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=47MjAJ2aXy">
+        <link rel="manifest" href="/manifest.json?v=47MjAJ2aXy">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg?v=47MjAJ2aXy" color="#0075ff">
+        <link rel="shortcut icon" href="/favicon.ico?v=47MjAJ2aXy">
+        <meta name="theme-color" content="#ffffff">
+        <!-- End of Favicons -->
+        <script type="text/javascript">            
+            // 비동기 폰트 로딩: https://github.com/typekit/webfontloader
+            WebFontConfig = {
+                google : {
+                    families : ['Raleway:200,300,400,600']
+                },
+                custom : {
+                    families : ['Nanum Gothic'],
+                    urls : ['http://fonts.googleapis.com/earlyaccess/nanumgothic.css']
+                }
+            };
+            (function() {
+                var wf = document.createElement('script');
+                wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1.4.10/webfont.js';
+                wf.type = 'text/javascript';
+                wf.async = 'true';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(wf, s);
+            })();
+        </script>
+        <link href="css/externel/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <!-- http://fontawesome.io/ -->
+        <!-- Default style for desktops, and wide moniters-->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- Some embedded styles -->
+        <style type="text/css">
+            body {
+                margin: 0;
+            }
+            /* image border */
+            .headPic {
+                border: 5px solid transparent;
+                -webkit-border-image: url(images/shadowBorder.png) 40 40 stretch;
+                -moz-border-image: url(images/shadowBorder.png) 40 40 stretch;
+                -o-border-image: url(images/shadowBorder.png) 40 40 stretch;
+                border-image: url(images/shadowBorder.png) 40 40 stretch;
+                border-top-width: 0;
+            }
+        </style>
+        <!-- Styles to use for small screens, such as phones-->
+        <link rel="stylesheet" media="screen and (max-width:768px)" href="css/style-mobile.css">
+        <!-- Styles to use for medium screens, such as tablets-->
+        <link rel="stylesheet" media="screen and (min-width: 769px) and (max-width: 1280px)" href="css/style-tablet.css">
+        <script src="css/externel/jquery/1.11.0/jquery.min.js"></script>
+        <script src="css/externel/jquery.transit.min.js"></script>
+        <!-- Smooth-scroll: https://github.com/cferdinandi/smooth-scroll -->
+        <script src="css/externel/smooth-scroll.js"></script>
+        <script src="js/shimminho.js"></script>
+        <!-- turn on html5 elements on ie 8 or lower: https://code.google.com/p/html5shiv/ -->
+        <!-- Just to support old browsers... at least something would help: http://modernizr.com/ -->
+        <!--[if lt IE 9]>
+        <script src="../../css/externel/html5shiv.js"></script>
+        <script src="../../css/externel/modernizr.custom.79843.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!--[if lt IE 9]>
+        <div id="M_Layer" style="position: fixed; top: 0; left: 0; letter-spacing:0px; width: 100%; z-index: 1000; padding: 0px 5px 0px 5px; background: #ffffe1; border-bottom: 2px outset #fff; text-align: left; font-size: 11pt">
+        <img src="images/icon_question.gif" alt="" style="margin:0 0 2px 0;vertical-align:middle;" /> 사용하고 계신 브라우저는 페이지를 원래와 다르게 표시합니다. 웹 브라우저를 <a href="http://www.microsoft.com/korea/ie"><strong>업데이트</strong></a> 하시거나, 다른 최신 브라우저를 사용하십시오.
+        <strong><a href="http://www.mozilla.or.kr/ko/firefox/">파이어폭스</a>,
+        <a href="http://kr.opera.com/download/">오페라</a>,
+        <a href="http://www.apple.com/kr/safari/">사파리</a>,
+        <a href="http://www.google.com/chrome?hl=ko">크롬</a></strong></div>
+        <![endif]-->
+        <div id="whiteOverlay">
+            <!-- hidden overflow for defined edge of blurring -->
+            <div id="navBar"></div>
+        </div>
+        <a href="">
+        <div id="homeButton">
+            HOME
+        </div> </a>
+        <div id="sidePanelToggle">
+            <!---->
+        </div>
+
+        <!-- Header -->
+        <div id="header">
+            <div class="top">
+                <!-- Logo -->
+                <a href="">
+                <div id="logo">
+                    <span class="image avatar48"><img src="images/avatar.png" alt="" /></span>
+                    <h1 id="title">Shim Min Ho</h1> <!-- 사이드 패널 상단 타이틀 -->
+                    <span class="underTitle">Overspace Computer Scientist</span>
+                </div> </a>
+
+                <!-- 사이드 패널 상단 -->
+                <nav id="nav"> 
+                    <ul>
+                        <li>
+                            <a data-scroll href="#main" id="top-link"><span><i class="fa fa-home fa-fw"><!----></i> Intro</span></a>
+                        </li>
+                        <li>
+                            <a data-scroll href="#about" id="about-link"><span><i class="fa fa-user fa-fw"><!----></i> About Me</span></a>
+                        </li>
+                        <li>
+                            <a data-scroll href="#portfolio" id="portfolio-link"><span><i class="fa fa-th fa-fw"><!----></i> Portfolio</span></a>
+                        </li>
+                        <li>
+                            <a data-scroll href="#contact" id="contact-link"><span><i class="fa fa-envelope fa-fw"><!----></i> Contact</span></a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div class="bottom">
+
+                <!-- 사이드 패널 하단 -->
+                <ul class="icons">
+                    <li>
+                        <a href="https://twitter.com/foreveler" target="_blank" ><i class="fa fa-twitter"><!----></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/cs.yonsei" target="_blank"><i class="fa fa-facebook"><!----></i></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/+JeffShim" target="_blank"><i class="fa fa-google-plus-square"><!----></i></a>
+                    </li>
+                    <li>
+                        <a data-scroll href="#contact"><i class="fa fa-envelope"><!----></i></a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Intro -->
+            <section id="top" class="one">
+                <div class="container">
+
+                    <img src="images/headPic.jpg" class="headPic" style="width: 80%" alt="" />
+
+                    <header>
+                        <h2><span id="shadowWelcome" style="display: block"> Welcome. </span> This is <strong>Home</strong> of
+                        <wbr>Shim Min Ho.
+                        </h2>
+                    </header>
+
+                    <p lang="ko">
+                        저의 웹사이트에 방문하신 모든 분들을 환영합니다. 제가 가진 일상, 혹은 일탈의 단편들을 차곡차곡 모아두는 곳입니다. 좋은 시간 되십시오.
+                    </p>
+                    <footer>
+                        <a data-scroll href="#about" class="button">Voilà!</a>
+                    </footer>
+
+                </div>
+            </section>
+
+            <!-- About Me -->
+            <section id="about" class="two">
+                <div class="container">
+
+                    <header>
+                        <h2>About Me</h2>
+                    </header>
+
+                    <img src="images/profile_image.jpg" style="width: 80%" alt="" />
+
+                    <p lang="ko">
+                        반갑습니다. 저는 이 웹사이트를 운영하고 있는 심민호입니다. 현재 대학교 2학년으로 컴퓨터과학을 전공하고 있으며,
+                        컴퓨터 기술을 활용하여 인류의 발전에 기여하는 것을 큰 목표로 삼고 있습니다. 관심 분야는 인공지능, HCI, 포토그래피를
+                        포괄하는 그래픽스 등입니다. 더 많은 내용은 포트폴리오를 참고해 보세요.
+                    </p>
+                    
+                    <footer>
+                        <a data-scroll href="#portfolio" class="button">Go to Portfolio</a>
+                    </footer>
+
+                </div>
+            </section>
+
+            <!-- Portfolio -->
+            <section id="portfolio" class="three">
+                <div class="container">
+
+                    <header>
+                        <h2>Portfolio</h2>
+                    </header>
+
+                    <p lang="ko">
+                        몇몇 이야기들을 모아둔 작은 공간입니다. 읽고 싶은 글의 제목을 선택하여 자세한 내용을 확인해 보세요.
+                    </p>
+                    <div class="multicolumns">
+                        <article class="item">
+                            <a href="portfolio/Introducing-Myself/" class="image full"><img src="images/introduce_myself_small.jpg" alt="" />
+                            <header>
+                                <h3>Introducing Myself</h3>
+                            </header> </a>
+                        </article>
+                        <article class="item">
+                            <a href="portfolio/The-Name-of-The-Rose/" class="image full"><img src="images/sad_rose_small.jpg" alt="" />
+                            <header>
+                                <h3>The Name of The Rose</h3>
+                            </header> </a>
+                        </article>
+                        <article class="item">
+                            <a href="portfolio/Project-Investment-Time/" class="image full"><img src="images/multiplication_blackboard.jpg" alt="" />
+                            <header>
+                                <h3>Project Investment <i class="fa fa-clock-o"></i></h3>
+                            </header> </a>
+                        </article>
+                        <article class="item">
+                            <a href="portfolio/Traveling-Europe/" class="image full"><img src="images/traveling_europe_small.jpg" alt="" />
+                            <header>
+                                <h3>Traveling Europe</h3>
+                            </header> </a>
+                        </article>
+                        <article class="item">
+                            <a href="portfolio/Romantic-Concert-of-Sunday-Night" class="image full"><img src="images/romantic_concert.jpg" alt="" />
+                            <header>
+                                <h3>&lt;Romantic Concert&gt; of Sunday Night</h3>
+                            </header> </a>
+                        </article>
+                        <article class="item">
+                            <a href="portfolio/Betrayers-of-The-Truth/" class="image full"><img src="images/betrayers_of_the_truth_small.jpg" alt="" />
+                            <header>
+                                <h3>Betrayers of The Truth</h3>
+                            </header> </a>
+                        </article>
+                        <article class="item">
+                            <a href="portfolio/Waple/" class="image full"><img src="images/waple_small.jpg" alt="" />
+                            <header>
+                                <h3>Application 'Waple'</h3>
+                            </header> </a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- 하단 copyright -->
+        <footer>
+            <div id="footer">
+
+                <!-- Copyright -->
+                <div class="copyright">
+                    <p>
+                        &copy; 2014 SHIM Min Ho. All rights reserved.
+                    </p>
+                    <ul class="menu">
+                        <li>
+                            <!-- hide_email() credit: http://www.maurits.vdschee.nl/php_hide_email/ -->
+                            <span id="e302079331">[javascript protected email address]</span>
+                            <script type="text/javascript">
+                                /*<![CDATA[*/
+                                eval("var a=\"xR-7wHugYzGXL1T_QtPA2d3VN0o5Bp8qfU@jnOaKDivCZrcs4hebEIMF6+JSy.9mklW\";var b=a.split(\"\").sort().join(\"\");var c=\"yhsrJZJriIw1sIihE-CFI\";var d=\"\";for(var e=0;e<c.length;e++)d+=b.charAt(a.indexOf(c.charAt(e)));document.getElementById(\"e302079331\").innerHTML=\"<a href=\\\"mailto:\"+d+\"\\\">\"+\"CONTACT\"+\"</a>\"")/*]]>*/
+                            </script>
+                            <!-- hide_email() end -->
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+
+        <!-- Smooth-scrolling initialization -->
+        <script>
+            smoothScroll.init({
+                speed : 500, // Integer. How fast to complete the scroll in milliseconds
+                easing : 'easeInOutCubic', // Easing pattern to use
+                updateURL : false, // Boolean. Whether or not to update the URL with the anchor hash on scroll
+                offset : 0, // Integer. How far to offset the scrolling anchor location in pixels
+                callbackBefore : function(toggle, anchor) {
+                    toggleOff();
+                }, // Function to run before scrolling
+                callbackAfter : function(toggle, anchor) {
+                    scrollRefreshCurrent();
+                    // Reposition sidePanel
+                } // Function to run after scrolling
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+#Options +FollowSymLinks -MultiViews
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+# if it is not for domain video.mywebsite.com then block it
+#RewriteCond %{HTTP_HOST} ^([^:]+)(:[0-9]+)?$
+#RewriteCond %1 !^(minhoshim\.com|www.minhoshim.com|localhost)$ [NC]
+#RewriteRule ^ - [F]

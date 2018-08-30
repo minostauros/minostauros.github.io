@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Waple | SHIM MIN HO</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="MobileOptimized" content="0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Raleway:200,300,400,600' rel='stylesheet' type='text/css'>
+        <link rel="icon" href="../../favicon.ico">
+        <script type="text/javascript">
+            // 비동기 폰트 로딩: https://github.com/typekit/webfontloader
+            WebFontConfig = {
+                google : {
+                    families : ['Raleway:200,300,400,600']
+                },
+                custom : {
+                    families : ['Nanum Gothic'],
+                    urls : ['http://fonts.googleapis.com/earlyaccess/nanumgothic.css']
+                }
+            };
+            (function() {
+                var wf = document.createElement('script');
+                wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1.4.10/webfont.js';
+                wf.type = 'text/javascript';
+                wf.async = 'true';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(wf, s);
+            })();
+        </script>
+        <link href="../../css/externel/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <!-- http://fontawesome.io/ -->
+        <!-- Default style for desktops, and wide moniters-->
+        <link rel="stylesheet" href="../../css/style.css" />
+        <!-- Some embedded styles -->
+        <style type="text/css">
+            body {
+                margin: 0;
+            }
+            /* image border */
+            .headPic {
+                border-width: 5px;
+                -webkit-border-image: url(images/shadowBorder.png) 40 40 stretch;
+                -moz-border-image: url(images/shadowBorder.png) 40 40 stretch;
+                -o-border-image: url(images/shadowBorder.png) 40 40 stretch;
+                border-image: url(images/shadowBorder.png) 40 40 stretch;
+                border-top-width: 0;
+            }
+            .iframe_wrapper {
+                width: 100%;
+                margin: 0 auto;
+                z-index: 0;
+            }
+            .h_iframe {
+                margin: 0 auto;
+                position: relative;
+                padding-top: 80%;
+                z-index: 0;
+            }
+            .h_iframe iframe {
+                margin: 0 auto;
+                border: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                /* Responsive iframe */
+                min-width: 80%;
+                width: 260px;
+                height: 100%;
+                z-index: 0;
+            }
+        </style>
+        <!-- Styles to use for small screens, such as phones-->
+        <link rel="stylesheet" media="screen and (max-width:768px)" href="../../css/style-mobile.css">
+        <!-- Styles to use for medium screens, such as tablets-->
+        <link rel="stylesheet" media="screen and (min-width: 769px) and (max-width: 1280px)" href="../../css/style-tablet.css">
+        <script src="../../css/externel/jquery/1.11.0/jquery.min.js"></script>
+        <script src="../../css/externel/jquery.transit.min.js"></script>
+        <!--
+        Smooth-scroll: https://github.com/cferdinandi/smooth-scroll
+        -->
+        <script src="../../css/externel/smooth-scroll.js"></script>
+        <script src="../../js/shimminho.js"></script>
+        <!-- turn on html5 elements on ie 8 or lower: https://code.google.com/p/html5shiv/ -->
+        <!-- Just to support old browsers... at least something would help: http://modernizr.com/ -->
+        <!--[if lt IE 9]>
+        <script src="../../css/externel/html5shiv.js"></script>
+        <script src="../../css/externel/modernizr.custom.79843.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!--[if lt IE 9]>
+        <div id="M_Layer" style="position: fixed; top: 0; left: 0; letter-spacing:0px; width: 100%; z-index: 1000; padding: 2px 5px 2px 5px; background: #ffffe1; border-bottom: 2px outset #fff; text-align: left; font-size: 11pt">
+        <img src="../../images/icon_question.gif" alt="" style="margin:0 0 2px 0;vertical-align:middle;" /> 사용하고 계신 브라우저는 페이지를 원래와 다르게 표시합니다. 웹 브라우저를 <a href="http://www.microsoft.com/korea/ie">업데이트</a> 하시거나, 다른 최신 브라우저를 사용하십시오.
+        <a href="http://www.mozilla.or.kr/ko/firefox/">파이어폭스</a>,
+        <a href="http://kr.opera.com/download/">오페라</a>,
+        <a href="http://www.apple.com/kr/safari/">사파리</a>,
+        <a href="http://www.google.com/chrome?hl=ko">크롬</a></div>
+        <![endif]-->
+        <div id="whiteOverlay">
+            <!-- hidden overflow for defined edge of blurring -->
+            <div id="navBar"></div>
+        </div>
+        <a href="../../">
+        <div id="homeButton">
+            HOME
+        </div> </a>
+        <div id="sidePanelToggle">
+            <!---->
+        </div>
+
+        <!-- Header -->
+        <div id="header">
+            <div class="top">
+                <!-- Logo -->
+                <a href="../../" id="top-link">
+                <div id="logo">
+                    <span class="image avatar48"><img src="../../images/avatar.png" alt="" /></span>
+                    <h1 id="title">Shim Min Ho</h1>
+                    <span class="underTitle">Overspace Computer Scientist</span>
+                </div> </a>
+
+                <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+                        <li>
+                            <a data-scroll href="#keynote" id="keynote-link"><span><i class="fa fa-desktop fa-fw"><!----></i> Keynote</span></a>
+                        </li>
+                        <li>
+                            <a data-scroll href="#introduction" id="intro-link"><span><i class="fa fa-asterisk fa-fw"><!----></i> About</span></a>
+                        </li>
+                        <li>
+                            <a data-scroll href="#contact" id="contact-link"><span><i class="fa fa-envelope fa-fw"><!----></i> Contact</span></a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div class="bottom">
+
+                <!-- 사이드 패널 하단 -->
+                <ul class="icons">
+                    <li>
+                        <a href="https://twitter.com/foreveler" target="_blank"><i class="fa fa-twitter"><!----></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/cs.yonsei" target="_blank"><i class="fa fa-facebook"><!----></i></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/+JeffShim" target="_blank"><i class="fa fa-google-plus-square"><!----></i></a>
+                    </li>
+                    <li>
+                        <a data-scroll href="#contact"><i class="fa fa-envelope"><!----></i></a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Keynote -->
+            <section id="keynote" class="one">
+                <div class="container">
+                    <header style="margin-top: 60px;">
+                        <h2><span class="shadowWelcome"> Keynote </span></h2>
+                    </header>
+                    <div class="iframe_wrapper">
+                        <div class="h_iframe" style="">
+                            <iframe src="https://app.box.com/embed_widget/s/mmqcs04e69czvwgogy9r?view=list&amp;sort=name&amp;direction=ASC&amp;theme=blue" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <p>
+                        <strong> <a href="https://app.box.com/embed_widget/s/mmqcs04e69czvwgogy9r?view=list&amp;sort=name&amp;direction=ASC&amp;theme=blue" title="Waple Promotion" target="_blank">Waple Promotion Keynote</a> </strong>
+                        <span lang="ko">을 클릭하여 더 크게 볼 수 있습니다.</span>
+                    </p>
+
+                    <footer style="margin-top: 2em;">
+                        <a data-scroll href="#introduction" class="button">About Waple</a>
+                    </footer>
+
+                </div>
+            </section>
+
+            <!-- Introducing Waple -->
+            <section id="introduction" class="two">
+                <div class="container">
+                    <header>
+                        <h2> Waple </h2>
+                    </header>
+                    <p><img src="images/waple_prom.png" style="width: 70%; border-radius: 5px;" alt="" />
+                    </p>
+                    <p><img src="images/mockup_main_note3_black.png" style="width: 25%" alt="" />
+                        <img src="images/note3_gonggisul_search_mockup.png" style="width: 25%" alt="" />
+                        <img src="images/iphone_food_tip_mockup.png" style="width: 19%" alt="" />
+                    </p>
+                    <div style="text-align: left">
+                        <p lang="ko">
+                            &nbsp; 와플은 Yonsei+의 줄임말로, 연세인들의 더 쉽고 간단한 학교 생활을 위해 제작, 기획된 애플리케이션입니다. 개인 비서와 같이, 묻지 않아도 다음 수업까지 남은 시간과 도착 예정 시간 등을 알려주고, 제출 기한이 얼마 남지 않은 리포트도 잊지 않고 알려줍니다. 도서관에 가까이 가면 도서관에서 진행 중인 이벤트나 추천 도서 등이 표시되는 등, 위치와 시간을 기반으로 연세인들이 필요로 하는 모든 정보들을 한 곳에 모으는 역할을 합니다. 자세한 정보는 위의 <a data-scroll href="#keynote">키노트</a>를 참고하세요.
+                        </p>
+                    </div>
+
+                    <footer style="margin-top: 2em;">
+                        <a href="../../#portfolio" class="button">Go Back to Portfolio</a>
+                    </footer>
+
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div id="footer">
+
+                <!-- Copyright -->
+                <div class="copyright">
+                    <p>
+                        &copy; 2014 SHIM Min Ho. All rights reserved.
+                    </p>
+                    <ul class="menu">
+                        <li>
+                            <!-- hide_email() credit: http://www.maurits.vdschee.nl/php_hide_email/ -->
+                            <span id="e302079331">[javascript protected email address]</span>
+                            <script type="text/javascript">
+                                /*<![CDATA[*/
+                                eval("var a=\"xR-7wHugYzGXL1T_QtPA2d3VN0o5Bp8qfU@jnOaKDivCZrcs4hebEIMF6+JSy.9mklW\";var b=a.split(\"\").sort().join(\"\");var c=\"yhsrJZJriIw1sIihE-CFI\";var d=\"\";for(var e=0;e<c.length;e++)d+=b.charAt(a.indexOf(c.charAt(e)));document.getElementById(\"e302079331\").innerHTML=\"<a href=\\\"mailto:\"+d+\"\\\">\"+\"CONTACT\"+\"</a>\"");
+                                /*]]>*/
+                            </script>
+                            <!-- hide_email() end -->
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+
+        <!-- smooth-scrolling initialization -->
+        <script>
+            smoothScroll.init({
+                speed : 500, // Integer. How fast to complete the scroll in milliseconds
+                easing : 'easeInOutCubic', // Easing pattern to use
+                updateURL : false, // Boolean. Whether or not to update the URL with the anchor hash on scroll
+                offset : 0, // Integer. How far to offset the scrolling anchor location in pixels
+                callbackBefore : function(toggle, anchor) {
+                    toggleOff();
+                }, // Function to run before scrolling
+                callbackAfter : function(toggle, anchor) {
+                    scrollRefreshCurrent();
+                    // Reposition sidePanel
+                } // Function to run after scrolling
+            });
+        </script>
+    </body>
+</html>

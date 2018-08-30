@@ -1,0 +1,113 @@
+    /*********************************************************************************/
+    /* Basic                                                                         */
+    /*********************************************************************************/
+    
+    body, input, textarea, select {
+        font-size: 13pt;
+    }
+    
+    .container {
+        padding: 0 1em 0 1em;
+    }
+    
+    /* Lists */
+    
+    ul.icons {
+    }
+    
+    ul.icons li {
+    }
+    
+    ul.icons li a {
+        width: 1.75em;
+    }
+    
+    /* Item */
+    
+    .item {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    /*********************************************************************************/
+    /* Header                                                                        */
+    /*********************************************************************************/
+    
+    #header {
+        width: 191px;
+    }
+    
+    #logo {
+    }
+    
+    #logo .image {
+        position: relative;
+        margin: 0 0 0.5em 0;
+    }
+    
+    #nav {
+    }
+    
+    #nav ul {
+    }
+    
+    #nav ul li {
+    }
+    
+    #nav ul li a {
+        padding: 0.5em 1.25em 0.5em 1.25em;
+    }
+    
+    #nav ul li a span {
+        padding-right: 10px;
+    }
+    
+    #nav ul li a span i {
+        float: right;
+        padding-top: 3px;
+    }
+    
+    /*********************************************************************************/
+    /* Footer                                                                        */
+    /*********************************************************************************/
+    
+    #footer {
+        margin-left: 191px;
+        min-width: 578px;
+    }
+    
+    /*********************************************************************************/
+    /* Main                                                                          */
+    /*********************************************************************************/
+    
+    #main {
+        margin-left: 191px;
+        min-width: 578px;
+    }
+    
+    #main > section .multicolumns {
+        /* setting the number of columns to 3 */
+        /* setting the space between columns to 30px */
+        /* adding a 1px 50% trans black line between each column */
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        -o-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 15px;
+        -moz-column-gap: 15px;
+        -o-column-gap: 15px;
+        column-gap: 15px;
+        -webkit-column-rule: 1px outset rgba(0,0,0,0.05);
+        -moz-column-rule: 1px outset rgba(0,0,0,0.05);
+        -o-column-rule: 1px outset rgba(0,0,0,0.05);
+        column-rule: 1px outset rgba(0,0,0,0.05); /*grayish rules*/
+    }
+    
+    /*********************************************************************************/
+    /* Mobile Buttons                                                                */
+    /*********************************************************************************/
+   
+   #homeButton
+   {
+       display: none;
+   }
