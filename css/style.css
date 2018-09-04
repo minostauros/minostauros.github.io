@@ -682,6 +682,11 @@
 		{
 			background-color: #f1f1f1;
 		}
+
+		#main #profile_image
+		{
+			width: 27%;
+		}
 		
         #main #portfolio /* Remove space below portfolio */
         {
